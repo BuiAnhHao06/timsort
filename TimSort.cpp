@@ -251,6 +251,19 @@ void TimSort(int *arr, int n)
     }
 }
 
+int main()
+{
+    int n;
+    cin>>n;
+    int*a = (int*)calloc(n, sizeof(int));
+    for(int i = 0; i < n ; i++)
+        cin>>a[i];
+    TimSort(a,n);
+    for(int i = 0; i < n ; i++)
+        cout<<a[i]<<" ";
+    cout<<"\n";
+    return 0;
+}
 
 
 
